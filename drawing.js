@@ -89,3 +89,12 @@ function handleUp()
     drawing = !drawing;
     console.log(drawing);
 }
+
+function mouseXY (e) {
+    var touches = e.touches || [];
+    var touch = touches[0] || {};
+    if (paint) {
+        addClick(touch.pageX - this.offsetLeft, touch.pageY - this.offsetTop - 40, true);
+        draw();
+    }
+}

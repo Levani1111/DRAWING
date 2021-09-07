@@ -45,9 +45,6 @@ window.onload=function()
     document.onmousemove = handleMouseMove;
     document.onmousedown = handleDown;
     document.onmouseup = handleUp;
-    document.touch = handleUp;
-    document.touch = handleDown;
-    canvas.addEventListener('contextmenu', startPosition);
 
     canvas.addEventListener('touchstart', startPosition, false);
     canvas.addEventListener('touchmove', draw, false);

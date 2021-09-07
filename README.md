@@ -1,5 +1,5 @@
 # DRAWING
-This is small DRAWING app. You can pick color and Width, also you can save as png picture.
+This is small DRAWING app. You can pick color and Width, also you can save as png picture. "DRAWING not working on mobile"
 
 # tech
 * HTML

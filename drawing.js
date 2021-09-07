@@ -45,6 +45,8 @@ window.onload=function()
     document.onmousemove = handleMouseMove;
     document.onmousedown = handleDown;
     document.onmouseup = handleUp;
+    document.touch.clientX;
+    document.touch.clientY;
     
     //Style line
     context.strokeStyle = "#000";

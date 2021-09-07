@@ -1,11 +1,11 @@
 # DRAWING
-This is small DRAWING app. You can pick color and wigth also you can same as png picture.
+This is small DRAWING app. You can pick color and Width, also you can save as png picture.
 
 # tech
 * HTML
 * CSS
 * Bootstrap 5
-* javascript
+* JavaScript
 
 # Deployed
 [netlify](https://app.netlify.com/)

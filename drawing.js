@@ -35,14 +35,6 @@ window.onload=function()
             var dataURL = document.getElementById('myCanvas').toDataURL();
             document.getElementById('canvasImg').src = dataURL;
         }, false);
-
-        function touchstart(event) { drawstart(event.touches[0]) }
-        function touchmove(event) { drawmove(event.touches[0]); event.preventDefault(); }
-        function touchend(event) { drawend(event.changedTouches[0]) }
-
-        canvas.addEventListener('touchstart', touchstart, false);
-        canvas.addEventListener('touchmove', touchmove, false);
-        canvas.addEventListener('touchend', touchend, false); 
     
     //Size Canvas
     context = document.getElementById('myCanvas').getContext("2d");
@@ -53,7 +45,9 @@ window.onload=function()
     document.onmousemove = handleMouseMove;
     document.onmousedown = handleDown;
     document.onmouseup = handleUp;
-
+    document.touchstart = touchstart;
+    document.touchmove = touchmove;
+    document.touchend = touchend;
     
     //Style line
     context.strokeStyle = "#000";
